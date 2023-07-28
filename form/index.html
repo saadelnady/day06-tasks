@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <div class="username">
+          <label for="userName">Enter your name : </label>
+          <input type="text" id="userName" />
+        </div>
+
+        <div class="userAge">
+          <label for="userAge">Enter your age :</label>
+          <input type="number" id="userAge" />
+        </div>
+
+        <div id="userGender">
+          <label for="male">Select you gender :</label>
+
+          <input type="radio" id="male" name="gender" value="male" />
+          <img src="./images/male.jpg" alt="male-img" for="male" />
+
+          <input type="radio" id="female" name="gender" value="female" />
+          <img src="./images/female.jpg" alt="female-img" for="female" />
+        </div>
+
+        <div class="favColor">
+          <label for=" ">Select you favourite color :</label>
+          <select name="color" id="favColor">
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+          </select>
+        </div>
+        <input type="submit" id="submit" />
+      </form>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
